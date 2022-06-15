@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <header>
+           <h1>Word Game</h1>
+        </header>
+        <div class="container">
+        <div class="grid-container1">
+            <h3 style="border-bottom: 1px solid black;border-radius: 10px;">Correct</h3>
+        </div>
+        <div class="grid-container2">
+            <h3 style="border-bottom: 1px solid black;border-radius: 10px;">New Word</h3>
+                    <div class="add">
+                        <button id="addBtn">
+                            add
+                        </button>
+                    </div>
+                </div> 
+        <div class="grid-container3">
+            <h3 style="border-bottom: 1px solid black;border-radius: 10px;">Wrong</h3>
+        </div>
+    </div>
+
+    <div class="add__todo__container" id="dialog">
+        <div class="form__container">
+            <div class="close" id="close">X</div>
+            <div class="form">
+                <div class="heading">
+                    Add a new Task
+                </div>
+                <div class="input__container">
+                    <input type="text" class="input" placeholder="Enter the title." id="title">
+                </div>
+                <div class="text">
+                    <textarea id="todo__text"></textarea>
+                </div>
+                <div class="error gayab">
+                    Title or description is cannot be empty.
+                </div>
+                <button onclick="addTodo()">
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
